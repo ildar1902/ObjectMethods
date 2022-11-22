@@ -28,5 +28,11 @@ public class Main {
         System.out.println("book1.getName() = " + book1.getName());
         System.out.println("book1 = " + book1);
         System.out.println("book2 = " + book2);
+        Author author1 = new Author("Виктор", "Пелевин");
+        Author author2 = new Author("Виктор", "Пелевин");
+        System.out.println("author1.equals(author2) = " + author1.equals(author2));
+        Book kniga = new Book("Хрустальный мир", author1, 1991);
+        Book kniga1 = new Book("Хрустальный мир", author1, 1991);
+        System.out.println("kniga.equals(kniga1) = " + kniga.equals(kniga1));
     }
 }

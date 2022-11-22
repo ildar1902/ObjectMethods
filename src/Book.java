@@ -29,4 +29,13 @@ public class Book {
     public String toString() {
         return "Название книги: " + this.name + ", автор: " + getAuthor() + ", год издания: " + this.publishingYear;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return name.equals(book.name);
+    }
 }
